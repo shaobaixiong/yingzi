@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <Placemark>
+            <name>冯圩孜</name>
+            <Point>
+                <coordinates>116.995554,32.827752,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>小街孜</name>
+            <Point>
+                <coordinates>117.257661,33.347367,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>单圩孜</name>
+            <Point>
+                <coordinates>117.095661,33.338297,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>赵圩孜</name>
+            <Point>
+                <coordinates>117.014346,32.83528,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>圩孜村</name>
+            <Point>
+                <coordinates>117.124635,33.291734,0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
