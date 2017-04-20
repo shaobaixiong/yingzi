@@ -8,6 +8,6 @@
     </xsl:template>
     
     <xsl:template match="Placemark">
-        <xsl:apply-templates select="//name"/>
+        <xsl:apply-templates select="name"/>
     </xsl:template>
 </xsl:stylesheet>
