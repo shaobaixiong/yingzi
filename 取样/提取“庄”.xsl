@@ -7,7 +7,7 @@
     <xsl:template match="/">
         <kml>
             <Document>
-                <name>TS02E02庄</name>
+                <name><xsl:value-of select="//Document/name"/>庄</name>
                 <xsl:copy-of select="//Placemark[contains(name,'庄')]"></xsl:copy-of>
             </Document>
         </kml>
