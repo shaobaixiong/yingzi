@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TS05E05</title>
+        <script src="/js/echarts.js"></script>
+    </head>
+    <body>
+        <div id="main" style="width: 600px;height:400px;"></div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1qvfFdMhfzaNNueczLeAPq-DHmaQ" width="640" height="480"></iframe>
+        <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        option = {
+    title : {
+        text: 'TS05E05',
+        subtext: '聚落名称分析'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['地名后缀']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            data : ['庄','孜','圩','家','楼','庙','集','桥','郢','塘']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'地名后缀',
+            type:'bar',
+            data:[348,93, 65, 58, 36, 35, 30, 29, 21, 21],
+            markPoint : {
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
+        },
+    ]
+};
+        
+        myChart.setOption(option);
+        </script>
+    </body>
+</html>
